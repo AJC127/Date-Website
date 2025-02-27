@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hii Love, would you fancy a date with me for our soon to be 2nd year anniversary next month???</h1>
+        <img id="golden-img" src="Golden.jpg" alt="Pouting Golden Retriever">
+        <div class="button-group">
+            <button class="yes-btn" onclick="nextPage()">Yes</button>
+            <button class="no-btn" onclick="showGolden()">No</button>
+        </div>
+    </div>
+    
+    <div id="date-options" class="hidden">
+        <h2>Since the midterm is right around the corner of our anniversary, we only have two possible dates for the date.</h2>
+        <button onclick="chooseDate('March 7')">March 7</button>
+        <button onclick="chooseDate('March 8')">March 8</button>
+    </div>
+    
+    <div id="dinner-options" class="hidden">
+        <h2>Choose a dinner venue:</h2>
+        <div class="dinner-choice">
+            <img src="buffet_dinner_cruise.jpg" alt="Buffet Dinner Cruise">
+            <button onclick="chooseDinner('Buffet Dinner Cruise')">Buffet Dinner Cruise</button>
+        </div>
+        <div class="dinner-choice">
+            <img src="steakhouse_by_river.jpg" alt="Steakhouse by the River">
+            <button onclick="chooseDinner('Steakhouse by the River')">Steakhouse by the River</button>
+        </div>
+    </div>
+    
+    <div id="itinerary" class="hidden">
+        <h2>A Sneak Peek into the Date</h2>
+        <div class="destination">
+            <h3>10:30 AM - 12 PM</h3>
+            <p>A place to relax, have a picnic and eat bf’s cooking (can’t guarantee if pass or fail).</p>
+            <img src="destination1.jpg" alt="Destination 1">
+        </div>
+        <div class="destination">
+            <h3>Afternoon Stroll</h3>
+            <p>Let’s walk around this area where sunlight falls through gaps between each aesthetic building. Just taking a stroll to relieve the fullness from lunch.</p>
+            <img src="destination2.jpg" alt="Destination 2">
+        </div>
+        <div class="destination">
+            <h3>Nature and City</h3>
+            <p>Be one with nature and one with the city of Bangkok. Lots of cute and aesthetic places to take pictures.</p>
+            <img src="destination3.jpg" alt="Destination 3">
+        </div>
+        <div class="destination">
+            <h3>Sunset by the Bridge</h3>
+            <p>Let’s enjoy the sunset by the bridge and take more photos there!</p>
+            <img src="destination4.jpg" alt="Destination 4">
+        </div>
+        <div class="destination">
+            <h3>Final Dinner</h3>
+            <p>Your choice of dinner: <span id="dinner-choice"></span></p>
+            <img id="dinner-image" src="" alt="Dinner Venue">
+        </div>
+    </div>
+    
+    <div id="ending" class="hidden">
+        <h2>Looking forward to our date 😍 Be ready to leave around 9 AM!</h2>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
